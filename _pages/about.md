@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Master’s student and student researcher in the [Machine Learning Group](https://www.ml.tu-berlin.de/) of Prof. Dr. Klaus-Robert Müller at TU Berlin, under the supervision of Dr. Stefan Chmiela.
+I am a Master’s student and student researcher in the [Machine Learning Group](https://www.ml.tu-berlin.de/) of Prof. Dr. Klaus-Robert Müller at TU Berlin, supervised by Dr. Stefan Chmiela.
 
 My research lies at the intersection of machine learning, chemistry, and physics, with a particular focus on enhancing molecular simulation using generative models.
 
