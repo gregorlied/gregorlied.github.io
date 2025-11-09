@@ -43,7 +43,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a style="pointer-events: none; cursor: default; text-decoration: none; color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -59,9 +59,10 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a style="pointer-events: none; cursor: default; text-decoration: none; color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <p style="margin-top: .5rem; font-size: 0.9rem;"><span aria-hidden="true">*</span> equal contribution</p>
     {% endif %}
 
     <!-- Social -->
@@ -73,8 +74,5 @@ layout: default
       </div>
     {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
   </article>
 </div>

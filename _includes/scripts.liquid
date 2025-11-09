@@ -305,7 +305,7 @@
   <script src="{{ '/assets/js/tabs.min.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.back_to_top %}
+{% if site.footer.back_to_top %}
   <!-- Back to Top -->
   <script src="{{ '/assets/js/vanilla-back-to-top.min.js' | relative_url | bust_file_cache }}"></script>
   <script>
@@ -320,8 +320,4 @@
   <script src="{{ '/assets/js/search-setup.js' | relative_url | bust_file_cache }}"></script>
   <script src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-
-{% if site.newsletter.enabled %}
-  <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
