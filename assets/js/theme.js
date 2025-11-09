@@ -1,4 +1,5 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
+const DEFAULT_THEME = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
@@ -253,7 +254,11 @@ let transTheme = () => {
 // "system". Default is "system".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  return themeSetting;
+  if (themeSetting === "dark" || themeSetting === "light") {
+    return themeSetting;
+  } else {
+    return DEFAULT_THEME;
+  }
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
