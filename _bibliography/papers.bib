@@ -1,7 +1,18 @@
 ---
 ---
 
-@article{DiTMC2025,
+@article{ripken2026learning,
+  abbr={Preprint},
+  title={Learning Hamiltonian Flow Maps: Mean Flow Consistency for Large-Timestep Molecular Dynamics},
+  author={Ripken*, Winfried and Plainer*, Michael and Lied*, Gregor and Frank*, Thorben and Unke, Oliver T and Chmiela, Stefan and Noé, Frank and Müller, Klaus-Robert},
+  abstract={Simulating the long-time evolution of Hamiltonian systems is limited by the small timesteps required for stable numerical integration. To overcome this constraint, we introduce a framework to learn \emph{Hamiltonian Flow Maps} by predicting the \emph{mean} phase-space evolution over a chosen time span~$\t$, enabling stable large-timestep updates far beyond the stability limits of classical integrators. To this end, we impose a \emph{Mean Flow} consistency condition for time-averaged Hamiltonian dynamics. Unlike prior approaches, this allows training on independent phase-space samples without access to future states, avoiding expensive trajectory generation. Validated across diverse Hamiltonian systems, our method in particular improves upon molecular dynamics simulations using machine-learned force fields (MLFF). Our models maintain comparable training and inference cost, but support significantly larger integration timesteps while trained directly on widely-available \emph{trajectory-free} MLFF datasets.},
+  journal={arXiv:2510.20771},
+  year={2026},
+  code={https://github.com/ML4MolSim/hamiltonian-flow-maps},
+  selected={true},
+}
+
+@article{frank2025sampling,
   abbr={NeurIPS},
   title={Sampling 3D Molecular Conformers with Diffusion Transformers},
   author={Frank*, J Thorben and Ripken*, Winfried and Lied*, Gregor and Müller, Klaus-Robert and Unke, Oliver T and Chmiela, Stefan},
@@ -11,6 +22,8 @@
   arxiv={2506.15378},
   code={https://github.com/ML4MolSim/dit_mc},
   openreview={tmbx9zGVWb},
+  poster={https://neurips.cc/media/PosterPDFs/NeurIPS%202025/115555.png?t=1763143492.4302244},
+  video={https://neurips.cc/virtual/2025/loc/san-diego/poster/115555},
   preview={ditmc.gif},
   selected={true},
 }
