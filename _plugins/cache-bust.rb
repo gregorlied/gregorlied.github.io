@@ -39,11 +39,14 @@ module Jekyll
     end
 
     def bust_file_cache(file_name)
+      return bust_css_cache(file_name) if File.extname(file_name) == '.css'
+
       CacheDigester.new(file_name: file_name, directory: nil).digest!
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      # PurgeCSS changes deployed stylesheets after rendering, so each build needs a fresh CSS cache key.
+      [file_name, '?v=', @context.registers[:site].time.to_i].join
     end
   end
 end
