@@ -7,3 +7,9 @@
 
 "Vision":
   color: "#009f36"
+
+"ICML":
+  color: "#1565c0"
+
+"NeurIPS":
+  color: "#6a1b9a"

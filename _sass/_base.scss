@@ -749,6 +749,10 @@ footer.sticky-bottom {
       .preview {
       }
 
+      video.preview {
+        border: 3px solid #ededed;
+      }
+
       .abbr {
         margin-bottom: 0.5rem;
 
@@ -756,14 +760,29 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: $white-color !important;
+
+          > div {
+            color: $white-color !important;
+          }
 
           a {
-            color: white;
+            color: $white-color !important;
 
             &:hover {
               text-decoration: none;
             }
+          }
+        }
+
+        .presentation {
+          display: block;
+          background-color: #2e7d32;
+          margin-bottom: 0.5rem;
+          color: $white-color !important;
+
+          &.presentation-spotlight {
+            background-color: $orange-color;
           }
         }
 
